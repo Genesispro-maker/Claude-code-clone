@@ -1,3 +1,5 @@
+
+
 const first_name = "Genesis";
 const last_name = "Pro";
 
@@ -425,39 +427,73 @@ displayUser("full", showfullname, showUsername);
 const sayhi = function (mainmessage) {
   return console.log(`Hi from ${mainmessage}`);
 };
-sayhi("genesis");
+sayhi("genesis")
 
-function performops(name1, name2, optype) {
-  if (optype == "firstname") {
-    const name = name1;
-    console.log(name);
-  } else if (optype == "lastname") {
-    const name = name2;
-    console.log(name);
-  } else if (optype == "fullname") {
-    const name = name1 + " " + name2;
-    console.log(name);
-  } else {
-    console.log("unsuported format");
-  }
-  console.log("thanks");
+const saygenesis = function(myname){
+  return console.log(`hi my name is ${myname}`)
 }
-const fullinfo = performops("genesis", "pro", "fullname");
-console.log(fullinfo);
-
-const saymyname = function (myname) {
-  console.log(`my name is ${myname}`);
-};
-saymyname("genesis");
+saygenesis("genesis")
 
 
-const company = {}
 
-company["brand"] = "base";
-company["age"] = 3;
-company["token"] = "$BASE";
+const inter = [1, 2, 3, 4, 6];
+for(const bash of inter){
+  console.log(bash)
+}
 
-console.log(company.token)
 
- 
-console.log("\u{1F600}");
+
+
+var food = "soup";
+
+switch(food){
+   case "bread":
+    console.log("my daily bread")
+    break;
+
+    case "pasta":
+      console.log("my favourite")
+      break;
+
+      case "soup":
+        console.log("eww")
+        break;
+
+        default:
+          console.log("invalid response")
+}
+
+
+
+
+var calculate = "multiplication"
+
+
+switch(calculate){
+  case "addition":
+    console.log(2 + 10)
+    break;
+
+    case "substraction":
+      console.log(2 - 10)
+      break;
+
+      case "division":
+        console.log(2 / 10)
+        break;
+
+        case "multiplication":
+          console.log(2 * 10)
+          break;
+
+          default: 
+          console.log("invalid format")
+}
+
+
+function addtocounting(){
+     var localcounting = 0;
+     counting = counting + 1;
+     localcounting = localcounting + 1;
+}
+addtocounting()
