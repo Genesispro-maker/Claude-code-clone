@@ -382,15 +382,12 @@ function performmathoperation(num1, num2, operationtype) {
   } else if (operationtype == "sub") {
     const result = num1 - num2;
     return result;
-  } else {
-    console.log("operation not supported");
+  } 
+  else{
+    console.log("unsupport")
   }
-
-  console.log("end of function!!!");
 }
-
-const sumResult = performmathoperation(30, 20, "div");
-console.log(sumResult);
+ performmathoperation("div", 2 , 2)
 
 //fucntion expression..... it is called function expression because yor assigning a variable to the function.
 const sayhello = function () {
@@ -405,95 +402,46 @@ const sayMyName = function (mainname) {
 sayMyName("genesis pro the OG");
 
 //calllback function.... are like values , and they can be assigned as well as passed around just like variables
+function displayUser(displaytype, showfullname, showusername){
+   if(displaytype == "full"){
+      showfullname();
+   }
+   else{
+       showusername();
+   }
 
-function displayUser(displaytype, showfullname, showUsername) {
-  if (displayUser == "full") {
-    showfullname();
-  } else {
-    showUsername();
-  }
 }
 
-function showfullname() {
-  console.log("john doe");
+function showfullname(){
+   console.log("genesis pro")
 }
 
-function showUsername() {
-  console.log("davidson");
+function showusername(){
+  console.log("genesis pro22")
 }
 
-displayUser("full", showfullname, showUsername);
-
-const sayhi = function (mainmessage) {
-  return console.log(`Hi from ${mainmessage}`);
-};
-sayhi("genesis")
-
-const saygenesis = function(myname){
-  return console.log(`hi my name is ${myname}`)
-}
-saygenesis("genesis")
+displayUser("no", showfullname, showusername);
 
 
+//Arrow function
 
-const inter = [1, 2, 3, 4, 6];
-for(const bash of inter){
-  console.log(bash)
-}
-
+const dope = (a, b) => a + b;
+console.log(dope(2, 5))
 
 
+//Scopes and Closures = scopes refers to the current context of code , which determine the accessibilty of variables to javascript.
 
-var food = "soup";
+let six = 20
 
-switch(food){
-   case "bread":
-    console.log("my daily bread")
-    break;
-
-    case "pasta":
-      console.log("my favourite")
-      break;
-
-      case "soup":
-        console.log("eww")
-        break;
-
-        default:
-          console.log("invalid response")
+const displayuser = () => {
+  let fullyy = "john doe";
+  console.log("this is a local variable :" + fullyy)
+  console.log("this is a global variable: " + six);
 }
 
+displayuser();
+// console.log(six)
+// console.log(fullyy)//declares an error cuz name is not declared in scope.
 
 
 
-var calculate = "multiplication"
-
-
-switch(calculate){
-  case "addition":
-    console.log(2 + 10)
-    break;
-
-    case "substraction":
-      console.log(2 - 10)
-      break;
-
-      case "division":
-        console.log(2 / 10)
-        break;
-
-        case "multiplication":
-          console.log(2 * 10)
-          break;
-
-          default: 
-          console.log("invalid format")
-}
-
-
-function addtocounting(){
-     var localcounting = 0;
-     counting = counting + 1;
-     localcounting = localcounting + 1;
-}
-addtocounting()
