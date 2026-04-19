@@ -8,6 +8,7 @@
         "@opentui/core": "^0.1.99",
         "@opentui/react": "^0.1.99",
         "react": "^19.2.4",
+        "web-tree-sitter": "^0.26.8",
       },
       "devDependencies": {
         "@types/bun": "latest",
@@ -212,7 +213,7 @@
 
     "utif2": ["utif2@4.1.0", "", { "dependencies": { "pako": "^1.0.11" } }, "sha512-+oknB9FHrJ7oW7A2WZYajOcv4FcDR4CfoGB0dPNfxbi4GO05RRnFmt5oa23+9w32EanrYcSJWspUiJkLMs+37w=="],
 
-    "web-tree-sitter": ["web-tree-sitter@0.26.0", "", {}, "sha512-wGGAMnJEMF8wy33iEGxSvnyEOfVLzSaa3x6g66aEHsL/hsgFb6IVPrpacIordAMz198pE9qReCEqFUuM0pnfwg=="],
+    "web-tree-sitter": ["web-tree-sitter@0.26.8", "", {}, "sha512-4sUwi7ZyOrIk5KLgYLkc2A/F0LFMQnBhfb+2Cdl7ik4ePJ6JD+fk4ofI2sA5eGawBKBaK4Vntt7Ww5KcEsay4A=="],
 
     "ws": ["ws@8.18.3", "", { "peerDependencies": { "bufferutil": "^4.0.1", "utf-8-validate": ">=5.0.2" }, "optionalPeers": ["bufferutil", "utf-8-validate"] }, "sha512-PEIGCY5tSlUt50cqyMXfCzX+oOPqN0vuGqWzbcJ2xvnkzkq46oOpz7dQaTDBdfICb4N14+GARUDw2XV2N4tvzg=="],
 
